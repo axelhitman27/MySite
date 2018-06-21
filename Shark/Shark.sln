@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkTools", "SharkTools\Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalShark", "DalShark\DalShark.csproj", "{0CA28DA5-94DF-4639-978F-A3BCB8B7F130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetData", "BetData\BetData.csproj", "{7215C842-7AD2-4027-A56E-12FA135BE884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0CA28DA5-94DF-4639-978F-A3BCB8B7F130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA28DA5-94DF-4639-978F-A3BCB8B7F130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA28DA5-94DF-4639-978F-A3BCB8B7F130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7215C842-7AD2-4027-A56E-12FA135BE884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7215C842-7AD2-4027-A56E-12FA135BE884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7215C842-7AD2-4027-A56E-12FA135BE884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7215C842-7AD2-4027-A56E-12FA135BE884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
