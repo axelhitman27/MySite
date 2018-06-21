@@ -11,8 +11,7 @@ namespace BetData.Controllers
     {
         public ActionResult Index()
         {
-            var model = GetData();
-            return View(model);
+            return View();
         }
 
         public ActionResult About()
@@ -27,13 +26,6 @@ namespace BetData.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
-
-        public DataTable GetData()
-        {
-            DataTable dataDT = new DataTable();
-
-            return dataDT;
         }
     }
 }
