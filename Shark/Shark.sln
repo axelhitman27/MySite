@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetData", "BetData\BetData.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp", "MyApp\MyApp.csproj", "{FAA76A02-2CF0-4FE1-AA6B-6C60576EBDD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyForms", "MyForms\MyForms.csproj", "{C38F52EF-8A4B-45C3-BEDF-66390F3714FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FAA76A02-2CF0-4FE1-AA6B-6C60576EBDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA76A02-2CF0-4FE1-AA6B-6C60576EBDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA76A02-2CF0-4FE1-AA6B-6C60576EBDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38F52EF-8A4B-45C3-BEDF-66390F3714FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38F52EF-8A4B-45C3-BEDF-66390F3714FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38F52EF-8A4B-45C3-BEDF-66390F3714FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38F52EF-8A4B-45C3-BEDF-66390F3714FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
