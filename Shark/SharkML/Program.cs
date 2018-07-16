@@ -40,9 +40,22 @@ namespace SharkML
             }).ToList();
 
             Console.WriteLine("Result:");
+            Console.WriteLine("-------------------------");
             foreach (var r in result)
             {
                 Console.WriteLine(r.Letter + " : " + r.Count);
+            }
+
+            Console.WriteLine("-------------------------");
+
+            Console.WriteLine("Result ordered:");
+            Console.WriteLine("-------------------------");
+            result = result.OrderByDescending(x => x.Count).ToList();
+
+            foreach (var r in result)
+            {
+                var percentage = ((decimal)r.Count / (decimal)result.Sum(x => x.Count))*100;
+                Console.WriteLine(r.Letter + " : " + r.Count + " (" + percentage.ToString("N2") + "%)");
             }
         }
 
@@ -66,16 +79,19 @@ namespace SharkML
         {
             var list = new List<RandomData>();
 
-            var lines = File.ReadAllLines(@"C:\Projects\MyWebsite\Shark\SharkML\data\randomdata.txt");
+            var lines = File.ReadAllLines(@"C:\Projects\Mine\Shark\SharkML\data\randomdata.txt");
 
             foreach (var line in lines)
             {
                 var linearray = line.Trim().Split();
                 if (linearray.Length > 0)
                 {
-                    var id = linearray[0];
-                    var name = new string(linearray[1].Where(x => char.IsWhiteSpace(x) || char.IsLetterOrDigit(x)).ToArray()); ;
-                    var date = linearray[2];
+                    var id = linearray[0].Trim();
+                    var newName = new string(linearray[1].Trim().Where(x => char.IsWhiteSpace(x) || char.IsLetterOrDigit(x)).ToArray());
+                    var name = newName;
+                    var date = linearray[2].Trim();
+
+                    if (name == "") continue;
 
                     list.Add(
                         new RandomData()
