@@ -54,7 +54,7 @@ namespace SharkML
 
             foreach (var r in result)
             {
-                var percentage = ((decimal)r.Count / (decimal)result.Sum(x => x.Count))*100;
+                var percentage = (decimal.Parse(r.Count.ToString()) / decimal.Parse(result.Sum(x => x.Count).ToString()))*100;
                 Console.WriteLine(r.Letter + " : " + r.Count + " (" + percentage.ToString("N2") + "%)");
             }
         }
