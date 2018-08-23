@@ -1,7 +1,6 @@
 ﻿using SharkML.Classes;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
 using System.Linq;
 
@@ -9,11 +8,11 @@ namespace SharkML
 {
     internal class Program
     {
-        public static List<Letters> lettersCount;
+        public static List<Letters> LettersCount;
 
-        private static void Main(string[] args)
+        private static void Main()
         {
-            lettersCount = new List<Letters>();
+            LettersCount = new List<Letters>();
             var nameList = GetNames();
             ShowMostLetters(nameList);
             Console.ReadLine();
@@ -33,7 +32,7 @@ namespace SharkML
                 SetLettersArray(alhpabetList, nameArray);
             }
 
-            var result = lettersCount.GroupBy(y => y.Letter).Select(x => new Letters()
+            var result = LettersCount.GroupBy(y => y.Letter).Select(x => new Letters()
             {
                 Letter = x.First().Letter,
                 Count = x.Sum(z => z.Count)
@@ -54,7 +53,7 @@ namespace SharkML
 
             foreach (var r in result)
             {
-                var percentage = (decimal.Parse(r.Count.ToString()) / decimal.Parse(result.Sum(x => x.Count).ToString()))*100;
+                var percentage = (decimal.Parse(r.Count.ToString()) / decimal.Parse(result.Sum(x => x.Count).ToString())) * 100;
                 Console.WriteLine(r.Letter + " : " + r.Count + " (" + percentage.ToString("N2") + "%)");
             }
         }
@@ -65,13 +64,14 @@ namespace SharkML
             {
                 foreach (var c in nameArray)
                 {
-                    alhpabetList.First(x => x.Letter.Equals(((Char)c).ToString())).Count++;
+                    alhpabetList.First(x => x.Letter.Equals(c.ToString())).Count++;
                 }
 
-                lettersCount.AddRange(alhpabetList);
+                LettersCount.AddRange(alhpabetList);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
+                // ignored
             }
         }
 

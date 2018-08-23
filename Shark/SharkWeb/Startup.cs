@@ -2,6 +2,7 @@
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(SharkWeb.Startup))]
+
 namespace SharkWeb
 {
     public partial class Startup
