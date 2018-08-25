@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkML", "SharkML\SharkML.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkWeb", "SharkWeb\SharkWeb.csproj", "{AEC08423-86C5-4B10-9511-F7AFBDF49BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkDAL", "SharkDAL\SharkDAL.csproj", "{58FEFD7C-3245-4C43-87CF-ED5579C9E717}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AEC08423-86C5-4B10-9511-F7AFBDF49BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC08423-86C5-4B10-9511-F7AFBDF49BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC08423-86C5-4B10-9511-F7AFBDF49BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FEFD7C-3245-4C43-87CF-ED5579C9E717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FEFD7C-3245-4C43-87CF-ED5579C9E717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FEFD7C-3245-4C43-87CF-ED5579C9E717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FEFD7C-3245-4C43-87CF-ED5579C9E717}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
