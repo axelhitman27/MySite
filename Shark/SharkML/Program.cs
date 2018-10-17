@@ -104,5 +104,15 @@ namespace SharkML
             }
             return list;
         }
+
+        [Flags]
+        enum Reptile
+        {
+            BlackMamba = 2,
+            CottonMouth = 4,
+            Wiper = 8,
+            Crocodile = 16,
+            Aligator = 32
+        }
     }
 }
